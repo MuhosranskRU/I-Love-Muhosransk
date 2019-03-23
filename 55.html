@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<style>
+@keyframes turning {
+    0% {
+        border-radius: 0 0 0 0;
+        transform: rotate(0deg);  }
+    25%{
+       border-radius:50% 0 0 0;
+       transform: rotate(45deg);  }
+    50%{
+       border-radius:50% 50% 0  0;
+       transform: rotate(90deg);  }
+     75%{
+       border-radius:50% 50% 50%  0;
+       transform: rotate(135deg);  }
+       100%{
+       border-radius:50% 50% 50%  50%;
+       transform: rotate(180deg);  }
+}
+div{
+     width: 300px;
+     height: 300px;
+     background-color: red;
+     margin: 50px;
+     animation: turning 2s ease-out 1s infinite alternate;
+	 float: left;
+}
+div.pic1{
+	background-image: url(1.jpg);
+}
+div.pic2{
+	background-image: url(2.jpg);
+}
+div.pic3{
+	background-image: url(3.jpg);
+}
+div.pic4{
+	background-image: url(4.jpg);
+}
+div.pic5{
+	background-image: url(5.jpg);
+}
+div:hover{
+animation-play-state: paused;
+}
+    </style> 
+</head>
+
+ 
+ <body>
+       <div class="pic1">
+        </div>
+		       <div class="pic2">
+        </div>       <div class="pic1">
+        </div>
+		       <div class="pic1">
+        </div>       <div class="pic1">
+        </div>
+      </body>
+</html>     
+
